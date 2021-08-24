@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "雷学委demo插件",
+  "version": "0.0.1",
+  "description": "没别的的就展示一下",
+  "icons": {
+  },
+  "author": "leixuewei",
+  "content_scripts": [
+    {
+      "js": [
+        "index.js"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_end",
+      "matches": [
+        "https://*.baidu.com/*",
+        "https://*.csdn.net/*"
+      ]
+    }
+  ]
+}
